@@ -8,7 +8,7 @@ Monorepo that contains a Server, Storybook and MFE Packages. The idea is that on
 
 ---
 
-1. `$ git clone [https://github.com/SketchLagoon/create-rs-domain.git](https://github.com/SketchLagoon/create-rs-domain.git)`
+1. `$ git clone https://github.com/SketchLagoon/create-rs-domain.git`
 2. `$ cd create-rs-domain`
 3. `$ yarn install`
 4. `$ yarn start:all`
@@ -17,7 +17,7 @@ Monorepo that contains a Server, Storybook and MFE Packages. The idea is that on
 
 ---
 
-1. `$ git clone [https://github.com/SketchLagoon/create-rs-domain.git](https://github.com/SketchLagoon/create-rs-domain.git)`
+1. `$ git clone https://github.com/SketchLagoon/create-rs-domain.git`
 2. `$ cd create-rs-domain`
 3. `$ yarn install`
 4. `$ cd package-name-here`
