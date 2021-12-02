@@ -9,7 +9,8 @@
   "scripts": {
     "build:all": "lerna run build --parallel",
     "install:all": "lerna bootstrap && lerna link",
-    "start:all": "lerna run launch --parallel"
+    "start:all": "lerna run launch --parallel",
+    "kill:all": "npx kill-port 1001 1002 2001 2002 3001 3002 8000"
   },
   "workspaces": [
     "packages/*",
@@ -17,6 +18,7 @@
     "storybook"
   ],
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "kill-port": "^1.6.1"
   }
 }
