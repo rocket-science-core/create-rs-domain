@@ -1,6 +1,6 @@
 {
   "packages": [
-    "packages/*",
+    "features/*",
     "server",
     "storybook"
   ],

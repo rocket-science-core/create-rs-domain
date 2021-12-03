@@ -40,11 +40,12 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: 'RocketScience',
+      name: 'appTwo',
       filename: 'remoteEntry.js',
       remotes: {},
       exposes: {
         './NewComponentTemplate': './src/components/templates/NewComponentTemplate',
+        './ExampleButtonAppTwo': './src/components/ExampleButtonAppTwo',
       },
       shared: {
         ...deps,

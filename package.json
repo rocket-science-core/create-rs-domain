@@ -1,5 +1,5 @@
 {
-  "name": "create-rs-domain",
+  "name": "@create-rs-domain/root",
   "version": "0.0.1",
   "description": "monorepo approach to rocket science app aggregation under a domain based model",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "kill:all": "npx kill-port 1001 1002 2001 2002 3001 3002 8000"
   },
   "workspaces": [
-    "packages/*",
+    "features/*",
     "server",
     "storybook"
   ],

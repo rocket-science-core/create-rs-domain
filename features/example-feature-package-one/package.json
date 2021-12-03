@@ -1,7 +1,8 @@
 {
-  "name": "example-feature-package-two",
+  "name": "@create-rs-domain/example-feature-package-one",
   "version": "0.0.0",
   "license": "MIT",
+  "main": "./src/index.ts",
   "author": {
     "name": "Alex Wright",
     "email": "jawright94@gmail.com"
@@ -20,9 +21,9 @@
     "start": "webpack-dev-server --open --mode development --watch",
     "start:live": "webpack-dev-server --open --mode development --liveReload",
     "launch": "rm -rf ./dist && concurrently -k \"yarn watch:dev\" \"yarn storybook\" \"yarn federate\"",
-    "storybook": "start-storybook -s public -p 3001",
+    "storybook": "start-storybook -s public -p 2001",
     "build-storybook": "build-storybook",
-    "federate": "serve ./dist -p 3002",
+    "federate": "serve ./dist -p 2002",
     "setup": "node setup",
     "validate": "yarn test",
     "generate-component": "node ./src/util/cli/generateComponent/index.ts && yarn test ",

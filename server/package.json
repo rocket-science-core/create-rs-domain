@@ -1,5 +1,5 @@
 {
-  "name": "rocket-science-server",
+  "name": "@create-rs-domain/express-server",
   "version": "0.0.0",
   "description": "simple express server with routes consumed from the packages under this domain",
   "author": "Alex Wright",
