@@ -23,8 +23,8 @@ Monorepo that contains a Server, Storybook and MFE Packages. The idea is that on
 4. `$ cd package-name-here`
     1. server
     2. storybook
-    3. packages/example-rs-app
-    4. packages/example-rs-app-two
+    3. packages/example-feature-package-one
+    4. packages/example-feature-package-two
 5. `$ yarn launch`
 
 ## To Kill All Running Processes
@@ -43,16 +43,19 @@ Ports will change as we mold each package into the desired product we want them 
 
 **Server**
 
-- port 8000
+- Express Server, port 8000
 
 **Storybook**
 
-- port 3001, 3002
+- Storybook, port 1001
+- Federated Modules Server, port 1002
 
-**Packages/examples-rs-app**
+**Packages/example-feature-package-one**
 
-- port 1001, 1002
+- Storybook, port 2001
+- Federated Modules Server, port 2002
 
-**Packages/example-rs-app-two**
+**Packages/example-feature-package-two**
 
-- port 2001, 2002
+- Storybook, port 3001
+- Federated Modules Server, port 3002
