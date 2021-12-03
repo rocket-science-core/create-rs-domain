@@ -2,6 +2,6 @@
   "compilerOptions": {
     "jsx": "react",
     "esModuleInterop": true,
-    "typeRoots": ["node_modules/@types", "globals.d.ts"]
+    "typeRoots": ["../node_modules/@types", "globals.d.ts"]
   }
 }

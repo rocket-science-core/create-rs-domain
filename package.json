@@ -9,6 +9,7 @@
   "scripts": {
     "build:all": "lerna run build --parallel",
     "install:all": "lerna bootstrap && lerna link",
+    "test:all": "lerna run test --parallel",
     "start:all": "lerna run launch --parallel",
     "kill:all": "npx kill-port 1001 1002 2001 2002 3001 3002 8000"
   },
