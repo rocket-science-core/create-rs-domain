@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../ApplicationRouters/DomainHandlers/index.ts"],"names":[],"mappings":";AAAA;;GAEG;;;;;;;;;;;;AAOD,MAAM,mBAAmB,GAAG,CAC1B,iBAA0B,EACT,EAAE;IACnB,MAAM,cAAc,GAAW,EAAE,OAAO,EAAE,aAAa,EAAE,CAAC;IAC1D,IAAI,iBAAiB,EAAE;QACrB,cAAc,CAAC,iBAAiB,GAAG,iBAAiB,CAAC;KACtD;IACD,OAAO,cAAc,CAAC;AACxB,CAAC,CAAA,CAAC;AAEO,kDAAmB"}

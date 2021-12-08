@@ -1,0 +1,4 @@
+const mockData = {
+    "scenarioOne": [],
+    "scenarioTwo": [],
+}

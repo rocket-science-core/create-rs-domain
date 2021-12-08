@@ -7,7 +7,7 @@ import compression from "compression";
 import morgan from "morgan";
 import express from "express";
 
-import RouterAggregate from './routes'
+import RouterAggregate from "./routes";
 
 const app = express();
 
@@ -22,7 +22,7 @@ app.use(morgan("tiny"));
  * Consume Aggregated Router
  */
 
-app.use('/api', RouterAggregate)
+app.use("/api", RouterAggregate);
 
 /**
  * Start the application
@@ -30,9 +30,20 @@ app.use('/api', RouterAggregate)
 
 const port = process.env.SERVER_PORT || 8000;
 
-app.listen(port, () => {
-  // tslint:disable-next-line:no-console
-  console.log(`server started at http://localhost:${port}`);
+app.get("/", (_, res) => {
+  res.send({
+    message: "hello world",
+  });
 });
 
-export * from './routes';
+if (require.main === module) {
+  // true if file is executed
+
+  app.listen(port, () => {
+    // tslint:disable-next-line:no-console
+    console.log(`server started at http://localhost:${port}`);
+  });
+}
+
+export * from "./routes";
+export default app;
