@@ -1,2 +1,3 @@
 export { default } from './router'
-export * from './handlers'
+export * as exampleSearchHandlers from './handlers'
+export { mockData } from './mockData'

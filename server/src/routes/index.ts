@@ -4,8 +4,7 @@ import * as express from "express";
  *  Import Application Sub-Routers
  */
 
-import ExampleSearchRouter from "./ExampleSearch";
-import ExampleAuthRouter from "./ExampleAuth";
+import ExampleSearchRouter, { exampleSearchHandlers } from "./ExampleSearch";
 
 /**
  * Aggregate of all Application Sub-Routers
@@ -14,6 +13,6 @@ import ExampleAuthRouter from "./ExampleAuth";
 const RouterAggregate = express.Router();
 
 RouterAggregate.use("/search", ExampleSearchRouter);
-RouterAggregate.use("/auth", ExampleAuthRouter);
 
 export default RouterAggregate;
+export { exampleSearchHandlers };

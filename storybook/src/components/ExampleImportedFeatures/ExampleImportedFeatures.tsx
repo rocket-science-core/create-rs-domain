@@ -13,8 +13,18 @@ interface ExampleImportedFeaturesProps {
 
 const ExampleImportedFeatures  = ({ text }: ExampleImportedFeaturesProps) => {
   console.log(ExampleButtonAppOne)
+
+  // const ExampleFetch = async () => {
+  //   const response = await fetch("https://localhost:8000/api/search");
+  //   const data = await response.json();
+  //   console.log(data);
+  // }
+
+  // console.log(ExampleFetch)
+
   return (
     <ExampleImportedFeaturesWrapper>
+      {/* {ExampleFetch()} */}
       <ExampleButtonAppOne text="App One" />
       <ExampleButtonAppTwo text="App Two" />
       <button className="styled-button">

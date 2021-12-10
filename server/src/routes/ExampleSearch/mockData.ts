@@ -1,4 +1,10 @@
-const mockData = {
-    "scenarioOne": [],
-    "scenarioTwo": [],
+export const mockData = {
+    "serviceOne": {
+        "sucess": [],
+        "failure": []
+    },
+    "serviceTwo": {
+        "sucess": [],
+        "failure": []
+    },
 }
