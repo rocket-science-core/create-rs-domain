@@ -1,0 +1,27 @@
+$ webpack
+asset [1m[32mindex.js[39m[22m 626 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main) 1 related asset
+runtime modules 211 bytes 2 modules
+modules by path [1m../node_modules/[39m[22m 870 KiB
+  javascript modules 609 KiB 103 modules
+  json modules 261 KiB
+    modules by path [1m../node_modules/iconv-lite/[39m[22m 86.7 KiB 8 modules
+    [1m../node_modules/mime-db/db.json[39m[22m 142 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    [1m../node_modules/statuses/codes.json[39m[22m 1.54 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    [1m../node_modules/send/node_modules/mime/types.json[39m[22m 30.8 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+modules by path [1m./src/[39m[22m 12.2 KiB
+  modules by path [1m./src/routes/ExampleSearch/*.ts[39m[22m 9.09 KiB 4 modules
+  [1m./src/index.ts[39m[22m 1.72 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  [1m./src/routes/index.ts[39m[22m 1.36 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+14 modules
+
+[1m[33mWARNING[39m[22m in [1m../node_modules/express/lib/view.js[39m[22m [1m[32m81:13-25[39m[22m
+[1mCritical dependency: the request of a dependency is an expression[39m[22m
+ @ ../node_modules/express/lib/application.js 22:11-28
+ @ ../node_modules/express/lib/express.js 18:12-36
+ @ ../node_modules/express/index.js 11:0-41
+ @ ./src/index.ts 22:32-50
+
+1 warning has detailed information that is not shown.
+Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
+
+webpack 5.64.4 compiled with [1m[33m1 warning[39m[22m in 4749 ms

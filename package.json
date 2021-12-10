@@ -7,10 +7,11 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build:all": "lerna run build --parallel",
+    "build:all": "turbo run build --parallel",
+    "build:dev:all": "turbo run build --parallel",
     "install:all": "lerna bootstrap && lerna link",
-    "test:all": "lerna run test --parallel",
-    "start:all": "lerna run launch --parallel",
+    "test:all": "turbo run test --parallel",
+    "start:all": "turbo run launch --parallel --no-cache",
     "kill:all": "npx kill-port 1001 1002 2001 2002 3001 3002 8000"
   },
   "workspaces": [
@@ -21,5 +22,19 @@
   "devDependencies": {
     "lerna": "^4.0.0",
     "kill-port": "^1.6.1"
-  }
+  },
+  "turbo": {
+    "pipeline": {
+      "build": {
+        "dependsOn": ["^build"],
+        "outputs": ["dist/**"]
+      },
+      "test": {
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      }
+    }
+   }
 }
