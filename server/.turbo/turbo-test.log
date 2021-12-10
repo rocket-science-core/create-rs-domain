@@ -1,13 +1,15 @@
+yarn run v1.22.17
 $ jest --json --outputFile=.jest-test-results.json || true
-GET /api/search 200 15 - 3.795 ms
-GET /api/search/test 200 57 - 1.053 ms
-GET / 200 25 - 2.118 ms
+GET /api/search 200 15 - 1.983 ms
+GET /api/search/test 200 57 - 0.660 ms
+GET / 200 25 - 1.447 ms
+Done in 4.79s.
 PASS src/routes/ExampleSearch/ExampleSearch.test.ts
 PASS src/index.test.ts
 
 Test Suites: 2 passed, 2 total
 Tests:       3 passed, 3 total
 Snapshots:   0 total
-Time:        3.826 s, estimated 4 s
+Time:        3.607 s
 Ran all test suites.
 Test results written to: .jest-test-results.json

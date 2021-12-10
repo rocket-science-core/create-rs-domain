@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "build:all": "turbo run build --parallel",
-    "build:dev:all": "turbo run build --parallel",
+    "build:dev:all": "turbo run build:dev --parallel",
     "install:all": "lerna bootstrap && lerna link",
     "test:all": "turbo run test --parallel",
     "start:all": "turbo run launch --parallel --no-cache",
@@ -30,7 +30,8 @@
         "outputs": ["dist/**"]
       },
       "test": {
-        "outputs": []
+        "dependsOn": ["build"],
+        "outputs": [".jest-test-results.json"]
       },
       "dev": {
         "cache": false
