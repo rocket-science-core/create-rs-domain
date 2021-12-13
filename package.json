@@ -12,7 +12,8 @@
     "install:all": "lerna bootstrap && lerna link",
     "test:all": "turbo run test --parallel",
     "start:all": "turbo run launch --parallel --no-cache",
-    "kill:all": "npx kill-port 1001 1002 2001 2002 3001 3002 8000"
+    "kill:all": "npx kill-port 1001 1002 2001 2002 3001 3002 8000",
+    "wow": "turbo run build test"
   },
   "workspaces": [
     "features/*",
@@ -20,22 +21,31 @@
     "storybook"
   ],
   "devDependencies": {
+    "kill-port": "^1.6.1",
     "lerna": "^4.0.0",
-    "kill-port": "^1.6.1"
+    "turbo": "^1.0.6"
   },
   "turbo": {
     "pipeline": {
       "build": {
-        "dependsOn": ["^build"],
-        "outputs": ["dist/**"]
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "dist/**"
+        ]
       },
       "test": {
-        "dependsOn": ["build"],
-        "outputs": [".jest-test-results.json"]
+        "dependsOn": [
+          "build"
+        ],
+        "outputs": [
+          ".jest-test-results.json"
+        ]
       },
       "dev": {
         "cache": false
       }
     }
-   }
+  }
 }

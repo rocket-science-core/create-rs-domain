@@ -1,4 +1,3 @@
-yarn run v1.22.17
 $ webpack
 asset [1m[32mindex.js[39m[22m 626 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main) 1 related asset
 runtime modules 211 bytes 2 modules
@@ -25,5 +24,4 @@ modules by path [1m./src/[39m[22m 12.2 KiB
 1 warning has detailed information that is not shown.
 Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
 
-webpack 5.64.4 compiled with [1m[33m1 warning[39m[22m in 5179 ms
-Done in 5.90s.
+webpack 5.64.4 compiled with [1m[33m1 warning[39m[22m in 5222 ms
